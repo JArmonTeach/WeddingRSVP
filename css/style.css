@@ -13,10 +13,11 @@
     --fw-reg: 400;
     --fw-bold: 900;
 
-    --clr-light-background: #e6eaea;
+    --clr-light-background: #ccc;
     --clr-light-font: #FFFFFF;
-    --clr-dark: #303030;
-    --clr-accent: #93001a;
+    --clr-dark: #101820;
+    --clr-accent-one: #006778;
+    --clr-accent-two: #D7A22A;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -67,7 +68,7 @@ strong{
 }
 
 :focus{
-    outline: 3px solid var(--clr-accent);
+    outline: 3px solid var(--clr-accent-one);
     outline-offset: 3px;
 }
 
@@ -137,7 +138,9 @@ header{
 }
 
 .nav__link:hover{
-    color: var(--clr-accent);
+    color: var(--clr-accent-two);
+    text-shadow:    0.25em 0.25em 0.75em rgba(204, 204, 204, .25),
+                    0.125em 0.125em 0.25em rgba(204, 204, 204, .15);
 }
 
 .nav-toggle{
@@ -161,12 +164,12 @@ header{
 
 .nav-open .hamburger{
     transform: rotate(.625turn);
-    background: var(--clr-accent);
+    background: var(--clr-accent-two);
 }
 
 .nav-open .hamburger::before{
     transform: rotate(90deg) translate(-6px);
-    background: var(--clr-accent);
+    background: var(--clr-accent-two);
 }
 
 .nav-open .hamburger::after{
