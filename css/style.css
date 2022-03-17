@@ -7,19 +7,21 @@
 /* Custom properties: update these for personal design */
 
 :root{
-    --ff-primary: "Crimson Pro", serif;
-    --ff-secondary: "Philosopher", sans-serif;
+    --ff-primary: 'Bebas Neue', cursive;
+    --ff-secondary: 'Encode Sans', sans-serif;
+    --ff-tercery: 'Great Vibes', cursive;
 
     --fw-reg: 400;
     --fw-bold: 900;
 
-    --clr-light-background: #ccc;
-    --clr-light-font: #FFFFFF;
-    --clr-dark: #101820;
-    --clr-accent-one: #006778;
-    --clr-accent-two: #D7A22A;
+    --clr-light-background: #ccc; /*204, 204, 204*/
+    --clr-light-font: #FFFFFF; /*255, 255, 255*/
+    --clr-dark-one: #101820; /*16, 24, 32*/
+    --clr-dark-two: #004748; /*0, 71, 72*/
+    --clr-accent-one: #006778; /*0, 103, 120*/
+    --clr-accent-two: #D7A22A; /*215, 162, 42*/
 
-    --fs-h1: 3rem;
+    --fs-h1: 2.75rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
@@ -30,7 +32,7 @@
 
 @media (min-width: 800px){
     :root{
-        --fs-h1: 4.5rem;
+        --fs-h1: 6.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
@@ -47,7 +49,7 @@ html{
 
 body{
     background: var(--clr-light-background);
-    color: var(--clr-dark);
+    color: var(--clr-dark-one);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -102,12 +104,12 @@ h3{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 1em;
 }
 
 .nav{
+    font-family: var(--ff-primary);
     position: fixed;
-    background: var(--clr-dark);
+    background: var(--clr-dark-two);
     color: var(--clr-light-font);
     top: 0;
     bottom: 0;
@@ -184,7 +186,7 @@ header{
 .hamburger,
 .hamburger::before,
 .hamburger::after{
-    background: var(--clr-dark);
+    background: var(--clr-dark-one);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -205,4 +207,45 @@ header{
 
 .hamburger::after{
     bottom: 6px;
+}
+
+
+
+/*Main Announcement*/
+
+.main-announce{
+    position: relative;
+    padding: 0%;
+}
+
+.main__img{
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    position: relative;
+    z-index: 1;
+}
+
+.monogram{
+    position: absolute;
+    left: 40%;
+    text-align: center;
+    top: 0%;
+    width: 20%;
+    filter: brightness(0) invert(1);
+    z-index: 2;
+}
+
+.section__title--main-announce{
+    font-family: var(--ff-tercery);
+    color: var(--clr-light-font);
+    text-shadow:    0.25em 0.25em 0.75em rgba(0, 103, 120, 0.25),
+                    0.125em 0.125em 0.25em rgba(0, 103, 120, 0.15);
+    position: absolute;
+    left: 0;
+    text-align: center;
+    top: 33%;
+    width: 100%;
+    letter-spacing: 2px;
+    z-index: 2;
+    transform: rotate(-2.5deg);
 }
