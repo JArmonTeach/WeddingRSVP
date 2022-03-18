@@ -275,7 +275,7 @@ header{
     text-align: center;
     top: 72%;
     width: 100%;
-    line-height: 15px;
+    line-height: 3px;
     z-index: 2;
 }
 
@@ -301,8 +301,9 @@ header{
     content: "";
     position: absolute;
     height: 5px;
-    border-bottom: 1px solid var(--clr-accent-two);
-    border-top: 1px solid var(--clr-accent-two);
+    border-top: 2px solid;
+    border-style: ridge;
+    border-color: var(--clr-accent-two);
     top: 0;
     width: 100%;
 }
@@ -318,3 +319,7 @@ header{
     left: 100%;
     margin-left: 15px;
 }
+
+
+/*Navigation Bar*/
+
