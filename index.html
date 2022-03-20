@@ -22,9 +22,7 @@
     </head>
 
     <body>
-
-        
-        <!--
+        <!--Hamburger Navigation-->
         <header>
             <button class="nav-toggle" arai-label="toggle navigation">
                 <span class="hamburger">
@@ -35,7 +33,7 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Our Story</a></li>
+                    <li class="nav__item"><a href="#story" class="nav__link">Our Story</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">RSVP</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Event Details</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Wedding Party</a></li>
@@ -44,9 +42,8 @@
                 </ul>
             </nav>
         </header>
-        -->
         
-        <!--Main Announcement-->
+        <!--Main Announcement-->        
         <section class="main-announce" id="home">
             <img src="img/ProposalKnee.jpg" alt="Jan proposing to Mish" class="main__img">
             
@@ -71,12 +68,6 @@
         </section>
 
         <!--Navigation Bar-->
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <span class="sr-only">
-                Menu
-            </span>
-        </button>
-
         <nav class="bar-navigation">
             <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
                 <li class="active">
@@ -85,7 +76,7 @@
                     </a>
                 </li>
                 <li class="active">
-                    <a href="#">
+                    <a href="#story">
                         <span aria-hidden="true">02</span>Our Story
                     </a>
                 </li>
@@ -117,9 +108,55 @@
             </ul>
         </nav>
 
-        
+        <section class="section__our-story" id="story">
+            <img src="img/HugCasual2.jpg" class="our-story__img">
 
-        <!--<script src="js/index.js"></script>-->
+            <div class="our-story__words">
+                <h2 class="our-story__heading">
+                    Our Story
+                </h2>
+
+                <hr class="our-story__line">
+    
+                <p class="our-story__text">
+                    Last night, my wife's boss from her brand new job invited us over for dinner. On the drive over, my wife reiterated many times to me just how important it was to make a good impression.
+    
+                    I scoffed and arrogantly informed my silly wife that I always make good impressions.
+                    
+                    My wife's boss is a single lady in her fifties, so it was just the three of us. We chitchatted over drinks and salads and seemed to really be hitting it off. She laughed at my well-timed, perfectly-appropriate jokes and my wife seemed pleased.
+                    
+                    Soon she brought out the main course, a nice big juicy steak for each of us. As I began to cut into my steak, I was discouraged to discover how under cooked this steak was.
+                    
+                    Now, I've had my fair share of rare steak. I prefer medium, but I can handle rare. This was several-minutes-on-a-hot-grill short of rare. I probably could've resuscitated the cow had I tried. Instead, I sat there fidgeting with my knife and fork, worrying about how I was going to get away with not eating this steak.
+                    
+                    Claim vegan-ism? No, I'd already feigned great enthusiasm upon seeing the steak.
+                </p>
+    
+                <p class="our-story__text">
+                    Just then, our hostess excused herself to the kitchen to take care of some dessert preparations. As I looked across the fancy dining room table at the open window of this 3rd story apartment... a cartoon light bulb appeared over my head.
+    
+                    I knew I had to be decisive, realizing that she could return at any moment. I committed. I grabbed the steak with my hand, gently shook off the juice and executed a perfect throw right through the center of the open window.
+    
+                    Here's the big time FU. The window wasn't open. It was the cleanest fricking window you've ever seen in your life. That is, until my mostly raw slab of steak slammed up against it and slowly slid down leaving a trail of bloody juice in its wake.
+    
+                    My wife - who's steak was a nice medium rare and was unaware of my predicament - turned, jaw dropped, and stared at me like I was an alien from another planet. This look then slowly morphed into more of a there-is-no-place-on-this-planet-you-can-ever-hide-from-me expression of demonic anger.
+    
+                    My wife's boss heard the thud of the steak-on-window impact and came quickly. She took in the scene, the steak sitting on the window sill, the blood trail, my empty plate, and then gave me an inquisitive, puzzled look.
+    
+                    I just didn't know what to say. It felt like a minute of silence, but was probably 3 or 4 seconds. Finally, the best I could manage was "I... I'm so sorry. I am such a clutz... I don't know... I was just cutting it.. and... it... ... it slipped... just ask my wife, I really am a clutz... right honey?... (no help coming from that direction) ... I will clean this up... I can't believe this... I am so sorry" etc... etc...
+                </p>
+    
+                <p class="our-story__text">
+                    Both women continued to stare at me like I had escaped from the loony bin, as I smeared the blood around the window with my cloth napkin, dusted off the steak, and continued to mutter my incoherent explanation. I knew no one was buying the story.
+    
+                    I knew what I had to do. I sheepishly returned to my seat and proceeded to eat every bite of that disgusting, cold, chewy, bloody, raw steak.
+    
+                    I remained pretty quiet the rest of the evening. My wife's only two words to me since the incident are "I'm fine".
+                </p>
+            </div>
+        </section>
+
+        <script src="js/index.js"></script>
         
     </body>
 </html>

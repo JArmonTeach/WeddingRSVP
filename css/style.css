@@ -108,7 +108,7 @@ h3{
 
 
 /*Header*/
-/*
+
 header{
     display: flex;
     justify-content: space-between;
@@ -216,10 +216,14 @@ header{
 .hamburger::after{
     bottom: 6px;
 }
-*/
+
 
 
 /*Main Announcement*/
+
+.img-nav-container{
+    position: relative;
+}
 
 .main-announce{
     position: relative;
@@ -350,6 +354,7 @@ header{
 .bar-navigation{
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 .primary-navigation{
@@ -358,8 +363,8 @@ header{
     margin: 0;
 
     align-items: center;
-    justify-content: center;
-    z-index: 2;
+    justify-content: space-evenly;
+    z-index: 3;
 
     background: hsl(0 0% 0% / 0.75);
     backdrop-filter: blur(1rem);
@@ -374,13 +379,24 @@ header{
 
 .primary-navigation a{
     text-decoration: none;
+    font-size: var(--fs-h3);
     color: var(--clr-light-font);
+}
+
+.primary-navigation a:hover{
+    color: var(--clr-accent-two);
+    text-shadow:    0.25em 0.25em 0.75em rgba(204, 204, 204, .25);
 }
 
 .primary-navigation a > [aria-hidden="true"]{
     font-weight: 600;
     margin-inline-end: .75em;
     color: var(--clr-light-font);
+}
+
+.primary-navigation a:hover > [aria-hidden="true"]{
+    color: var(--clr-accent-one);
+    text-shadow:    0.25em 0.25em 0.75em rgba(204, 204, 204, .25);
 }
 
 @media (max-width: 60em){
@@ -395,4 +411,56 @@ header{
         margin-right: 0;
         margin-left: auto;
     }
+}
+
+
+
+/*Our Story Section*/
+
+.section__our-story{
+    position: relative;
+    top: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    align-items: stretch;
+
+    background: var(--clr-light-background);
+}
+
+.our-story__img{
+    max-width: 100%;
+    float: left;
+}
+
+.our-story__words{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-story__heading{
+    padding: 0;
+    letter-spacing: 5px;
+    margin-top: .25em;
+    color: var(--clr-accent-one);
+}
+
+hr.our-story__line{
+    border: 0; 
+    height: 1px; 
+    width: 50%;
+    background-image: linear-gradient(to right, var(--clr-accent-two), var(--clr-dark-two), var(--clr-dark-two), var(--clr-accent-two));
+}
+
+.our-story__text{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    color: var(--clr-dark-one);
+
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
