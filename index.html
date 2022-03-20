@@ -71,8 +71,14 @@
         </section>
 
         <!--Navigation Bar-->
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">
+                Menu
+            </span>
+        </button>
+
         <nav class="bar-navigation">
-            <ul id="primary-navigation" class="primary-navigation flex">
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
                 <li class="active">
                     <a href="#home">
                         <span aria-hidden="true">01</span>Home
