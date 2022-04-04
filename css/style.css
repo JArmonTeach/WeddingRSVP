@@ -419,6 +419,7 @@ header{
         flex-direction: column;
         padding: min(20vh, 2rem) 1em;
         width: 50%;
+        height: 100%;
         margin-right: 0;
         margin-left: auto;
     }
@@ -505,4 +506,24 @@ header{
         margin-left: 5px;
         margin-right: 5px;
     }
+}
+
+
+
+/*Event Details and RSVP Section*/
+
+.event-details__container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.event-details__img{
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    position: relative;
+    z-index: 1;
 }
