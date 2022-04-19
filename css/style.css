@@ -95,6 +95,25 @@ strong{
     border: 0;
 }
 
+.animated-background{
+    background: linear-gradient(
+        to right, #101820, #006778, #9F792C);
+    background-size: 400% 400%;
+    animation: animated-background 10s infinite ease-in-out;
+}
+
+@keyframes animated-background{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
 
 
 /* Typography */
@@ -247,9 +266,9 @@ header{
     background-repeat: no-repeat;
     background-position: 0% 0%;
     position: relative;
-    box-shadow: 24px 0 16px -16px #004748, -24px 0 16px -16px #004748; 
-    -moz-box-shadow: 24px 0 16px -16px #004748, -24px 0 16px -16px #004748; 
-    -webkit-box-shadow: 24px 0 16px -16px #004748, -24px 0 16px -16px #004748;
+    box-shadow: 24px 0 16px -16px #101820; 
+    -moz-box-shadow: 24px 0 16px -16px #101820; 
+    -webkit-box-shadow: 24px 0 16px -16px #101820; 
     z-index: 1;
 }
 
@@ -363,70 +382,6 @@ header{
 }
 
 
-/*Navigation Bar*/
-
-.bar-navigation{
-    position: sticky;
-    top: 0;
-    z-index: 12;
-}
-
-.primary-navigation{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    align-items: center;
-    justify-content: space-evenly;
-    z-index: 3;
-
-    background: hsl(0 0% 0% / 0.75);
-    backdrop-filter: blur(1rem);
-}
-
-@supports (backdrop-filter: blur(1rem)){
-    .primary-navigation{
-        background: hsl(0 0% 100% / 0.1);
-        backdrop-filter: blur(1rem);
-    }
-}
-
-.primary-navigation a{
-    text-decoration: none;
-    font-size: var(--fs-h3);
-    color: var(--clr-light-font);
-}
-
-.primary-navigation a:hover{
-    color: var(--clr-accent-two);
-    text-shadow:    0.25em 0.25em 0.75em rgba(204, 204, 204, .25);
-}
-
-.primary-navigation a > [aria-hidden="true"]{
-    font-weight: 600;
-    margin-inline-end: .75em;
-    color: var(--clr-light-font);
-}
-
-.primary-navigation a:hover > [aria-hidden="true"]{
-    color: var(--clr-accent-one);
-    text-shadow:    0.25em 0.25em 0.75em rgba(204, 204, 204, .25);
-}
-
-@media (max-width: 60em){
-    .primary-navigation{
-        --gap: 2em;
-        
-        position: relative;
-        inset: 0 0 0 0;
-        flex-direction: column;
-        padding: min(20vh, 2rem) 1em;
-        width: 50%;
-        height: 100%;
-        margin-right: 0;
-        margin-left: auto;
-    }
-}
 
 /*Our Story Section*/
 
@@ -437,6 +392,7 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background: var(--clr-dark-one);
 }
 
 .our-story__container .our-story__card{
@@ -528,20 +484,22 @@ header{
 .event-details__img{
     display: block;
     position: relative;
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
     z-index: 1;
 }
 
 .event-details__main-header{
     display: block;
     position: absolute;
-    top: 80px;
+    top: 50px;
     left: 37%;
-    text-align: center;
-    
+    text-align: center;    
 
     font-family: var(--ff-primary);
     font-size: var(--fs-h1);
-    color: var(--clr-light-font);
+    color: var(--clr-accent-two);
     letter-spacing: 5px;
     text-shadow: 0px 4px 3px rgba(0, 103, 120, 0.4),
              0px 8px 13px rgba(0, 103, 120, 0.1),
@@ -552,12 +510,11 @@ header{
 .event-details__Ceremony{
     display: block;
     position: absolute;
-    top: 500px;
+    top: 300px;
     left: 2%;
     text-align: center;
     line-height: 3%;
     border-radius: 25px;
-
 
     font-family: var(--ff-secondary);
     font-size: var(--fs-h4);
@@ -569,18 +526,19 @@ header{
     background: hsla(189, 100%, 24%, 0.2);
     backdrop-filter: blur(1rem);
 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
     z-index: 3;
 }
 
 .event-details__Reception{
     display: block;
     position: absolute;
-    top: 500px;
+    top: 300px;
     left: 71%;
     text-align: center;
     line-height: 3%;
     border-radius: 25px;
-
 
     font-family: var(--ff-secondary);
     font-size: var(--fs-h4);
@@ -592,6 +550,8 @@ header{
     background: hsla(189, 100%, 24%, 0.2);
     backdrop-filter: blur(1rem);
 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
     z-index: 3;
 }
 
@@ -599,9 +559,11 @@ header{
     margin-top: 15px;
     font-family: var(--ff-primary);
     font-size: var(--fs-h2);
-    text-shadow: 0px 4px 3px rgba(0, 103, 120, 0.4),
-             0px 8px 13px rgba(0, 103, 120, 0.1),
-             0px 18px 23px rgba(0, 103, 120, 0.1);
+    color: var(--clr-accent-one);
+    -webkit-text-stroke: 0.0001px #FFFFFF;
+    text-shadow: 0px 4px 3px rgba(215, 162, 42, 0.4),
+             0px 8px 13px rgba(215, 162, 42, 0.1),
+             0px 18px 23px rgba(215, 162, 42, 0.1);
 }
 
 .event-details__Ceremony hr, .event-details__Reception hr{
@@ -609,4 +571,67 @@ header{
     height: 1px; 
     width: 50%;
     background-image: linear-gradient(to right, var(--clr-light-background), var(--clr-accent-two), var(--clr-accent-two), var(--clr-light-background));
+}
+
+.event-details__RSVP{
+    display: block;
+    position: absolute;
+    top: 750px;
+    left: 40%;
+    text-decoration: none;
+    border-radius: 25px;
+    line-height: 130px;
+
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h1);
+    color: var(--clr-light-font);
+    letter-spacing: 5px;
+    text-shadow: 0px 4px 3px rgba(16, 24, 32, 0.4),
+             0px 8px 13px rgba(16, 24, 32, 0.1),
+             0px 18px 23px rgba(16, 24, 32, 0.1);
+
+    background:
+      linear-gradient(
+        to right,
+        rgba(0, 103, 120, 1),
+        rgba(0, 103, 120, 1)
+      ),
+      linear-gradient(
+        to right,
+        rgba(191,155,48, 1),
+        rgba(255,191,0, 1),
+        rgba(215, 162, 42, 1)
+    );
+
+    background-size: 100% 200px, 0 200px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .3s;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+    z-index: 3;
+}
+
+.event-details__RSVP:hover{
+    background-size: 0 200px, 100% 200px;
+    color: var(--clr-accent-one);
+    text-shadow: 0px 4px 3px rgba(16, 24, 32, 0.4),
+             0px 8px 13px rgba(16, 24, 32, 0.1),
+             0px 18px 23px rgba(16, 24, 32, 0.1);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: all .3s;
+}
+
+
+/*RSVP PAGE*/
+
+/*RSVP Nav Button*/
+.fa-house-chimney{
+    color: var(--clr-light-background);
+    padding: .5em;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
 }
