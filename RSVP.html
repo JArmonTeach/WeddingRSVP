@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Wedding Website</title>
+        <title>RSVP</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfroj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
@@ -31,7 +31,46 @@
         
         <form class="RSVP-form">
             
-            <div class ="info">
+            <div class ="RSVP-info">
+                <img src="img/JMmonogram.svg" alt="Monogram of Initials" class="monogram-black">
+
+                <h1 class="RSVP-headding">RSVP</h1>
+                <h2 class="RSVP-info">Please Respond by May 12, 2023</h2>
+
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName"><br>
+
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName"><br>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email"><br>
+
+                <h3 class="response-title">Will you be attending?</h3>
+                <input type="radio" id="responseYes">
+                <label for="responseYes">Graciously Accept</label><br>
+                
+                <input type="radio" id="responseNo">
+                <label for="responseNo">Respectfully Decline</label><br>
+
+                <h3 class="response-title">Please choose a the meal of your choice</h3>
+                <input type="radio" id="beef">
+                <label for="beef"><i class="fa-solid fa-cow"></i></label><br>
+                
+                <input type="radio" id="fish">
+                <label for="fish"><i class="fa-solid fa-fish"></i></label><br>
+
+                <input type="radio" id="vegetarian">
+                <label for="vegetarian"><i class="fa-solid fa-carrot"></i></label><br>
+
+                <h3 class="party-title">Who in your immediate family or plus one will be attending with you?</h3>
+                <!--TODO: ADD dynamic form inputs for party-->
+
+                <!--TODO: ADD mailing address area-->
+
+                <!--TODO: ADD special request for allergies-->
+
+            </div>
                 
 
         </form>
