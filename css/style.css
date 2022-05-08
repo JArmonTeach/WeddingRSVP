@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Custom properties: update these for personal design */
 
 :root{
@@ -54,7 +59,7 @@ body{
     color: var(--clr-light-font);
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    /* width: 90%; */
     
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -79,9 +84,9 @@ strong{
     outline-offset: 3px;
 }
 
-.animated-background{
+/* .animated-background{
     background: linear-gradient(
-        to right, #101820, #006778, #9F792C);
+        to right, #004748, #006778, #9F792C);
     background-size: 400% 400%;
     animation: animated-background 10s infinite ease-in-out;
 }
@@ -96,7 +101,7 @@ strong{
     100%{
         background-position: 0 50%;
     }
-}
+} */
 
 
 
@@ -127,119 +132,103 @@ h3{
 
 /*Header*/
 
-header{
-    display: flex;
-    justify-content: space-between;
+li, a, button{
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    color: var(--clr-light-font);
+    text-decoration: none;
+    z-index: 2;
 }
 
-.nav{
-    font-family: var(--ff-primary);
-    position: fixed;
-    background: var(--clr-dark-two);
-    color: var(--clr-light-font);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
+.monogram{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    z-index: 2;
+}
 
-    transform: translate(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3%;
+    flex-wrap: wrap;
 }
 
 .nav__list{
     list-style: none;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+}
+
+.nav__item{
+    display: inline-block;
+    padding: 0px 20px;
 }
 
 .nav__link{
-    color: inherit;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
+    position: relative;
+    color: var(--clr-light-font);
     text-decoration: none;
 }
 
 .nav__link:hover{
-    color: var(--clr-accent-two);
-    text-shadow:    0.25em 0.25em 0.75em rgba(204, 204, 204, .25),
-                    0.125em 0.125em 0.25em rgba(204, 204, 204, .15);
-    transition: 0.3s;
+    color: var(--clr-light-font);
 }
 
-.nav-toggle{
-    padding: .5em;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
+.nav__link:before{
+    content: "";
     position: absolute;
-    right: 1em;
-    top: 1em;
-    z-index: 1000;
-}
-
-.nav-open .nav{
-    transform: translateX(0);
-}
-
-.nav-open .nav-toggle{
-    position: fixed;
-}
-
-.nav-open .hamburger{
-    transform: rotate(.625turn);
-    background: var(--clr-accent-two);
-}
-
-.nav-open .hamburger::before{
-    transform: rotate(90deg) translate(-6px);
-    background: var(--clr-accent-two);
-}
-
-.nav-open .hamburger::after{
-    opacity: 0;
-}
-
-.hamburger{
     display: block;
-    position: relative;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after{
-    background: var(--clr-light-background);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
-}
-
-.hamburger::before,
-.hamburger::after{
-    content: '';
-    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
     left: 0;
-    right: 0;
+    background-color: var(--clr-light-font);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
-.hamburger::before{
-    top: 6px;
+.nav__link:hover::before{
+    transform: scaleX(1);
 }
 
-.hamburger::after{
-    bottom: 6px;
+button{
+    padding: 9px 25px;
+    background-color: transparent;
+    border: solid 1px var(--clr-light-background);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: var(--clr-light-font);
+    color: var(--clr-dark-one);
 }
 
 
 
 /*Main Announcement*/
+.initial-bg{
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
 
+.initial-bg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    opacity: 0.7;
+    z-index: 1;
+}
 
 
 /*RSVP PAGE*/
@@ -253,8 +242,4 @@ header{
     position: absolute;
     right: 0.5em;
     top: 0.5em;
-}
-
-.monogram-black{
-    fill: var(--clr-dark-one);
 }
