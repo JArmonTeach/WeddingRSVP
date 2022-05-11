@@ -230,6 +230,32 @@ button:hover{
     z-index: 1;
 }
 
+.middle-wording{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+
+.names{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.announcement{
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 7px;
+    font-weight: lighter;
+}
+
 
 /*RSVP PAGE*/
 
