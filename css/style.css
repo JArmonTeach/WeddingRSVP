@@ -148,6 +148,7 @@ li, a, button{
 }
 
 header{
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -210,24 +211,10 @@ button:hover{
 
 /*Main Announcement*/
 .initial-bg{
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-}
-
-.initial-bg img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
-    opacity: 0.7;
-    z-index: 1;
+    background-image: url('../img/ProposalKnee.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 .middle-wording{
@@ -255,6 +242,39 @@ button:hover{
     top: 7px;
     font-weight: lighter;
 }
+
+
+
+/*Our Story*/
+.our-story{
+    position: relative;
+}
+
+.left-column, .middle-column, .right-column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.our-story:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.our-story__img{
+    
+}
+
+.our-story__header{
+    font-size: var(--fs-h2);
+    font-weight: lighter;
+}
+
+.our-story__text{
+    margin-top: 1em;
+}
+
 
 
 /*RSVP PAGE*/
