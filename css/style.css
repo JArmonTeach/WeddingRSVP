@@ -245,12 +245,14 @@ button:hover{
 
 
 
-/*Our Story*/
-.our-story{
+/*Our Story & Event Details*/
+
+.our-story, .event-details{
     position: relative;
+    padding: 1em;
 }
 
-.left-column, .middle-column, .right-column{
+.left-column-story, .middle-column-story, .right-column-story,.left-column-details, .middle-column-details, .right-column-details{
     float: left;
     width: 33.33%;
     padding: 10px;
@@ -262,16 +264,34 @@ button:hover{
     clear: both;
 }
 
-.our-story__img{
-    
-}
-
-.our-story__header{
+.our-story__header, .event-details__header{
     font-size: var(--fs-h2);
     font-weight: lighter;
 }
 
+.event-details__subheading{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: var(--fs-h3);
+    margin-top: 1em;
+    padding-right: 2em;
+    text-align: center;
+}
+
 .our-story__text{
+    margin-top: 1em;
+}
+
+.reception-details, .ceremony-details{
+    font-size: var(--fs-h3);
+}
+
+.flex-details-container{
+    display: flex;
+}    
+
+.ceremony-details, .reception-details{
+    flex: 1;
     margin-top: 1em;
 }
 

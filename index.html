@@ -31,7 +31,7 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#story" class="nav__link">Our Story</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Event Details</a></li>
+                    <li class="nav__item"><a href="#details" class="nav__link">Event Details</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Wedding Party</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Registry</a></li>
                 </ul>
@@ -53,13 +53,12 @@
         </section>
 
         <!--Our Story-->
-        <!--TODO: Figure out how to animate the stuff in this section-->
         <section class="our-story" id="story">
-            <div class="left-column">
+            <div class="left-column-story">
                 <img src="img/SillyHugMillersAleHouse.jpg" class="our-story__img" />
             </div>
 
-            <div class="middle-column">
+            <div class="middle-column-story">
                 <h1 class="our-story__header">Our Story</h1>
 
                 <p class="our-story__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -69,13 +68,50 @@
                 <p class="our-story__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
 
-            <div class="right-column">
-
-            </div>
+            <div class="right-column-story"></div>
         </section>
 
         <!--Event Details and RSVP Link-->
-        
+        <section class="event-details" id="details">
+            <div class="left-column-details"></div>
+
+            <div class="middle-column-details">
+                <h1 class="event-details__header">
+                    Event Details
+                </h1>
+
+                <h2 class="event-details__subheading">
+                    August 12, 2023
+                </h2>
+
+                <div class="flex-details-container">
+                    <p class="ceremony-details">
+                        <u>CEREMONY</u> <br>
+                        Holy Spirit Catholic Church <br>
+                        11665 Fort Caroline Road <br>
+                        Jacksonville, FL 32225 <br>
+                        11:00 AM
+                    </p>
+
+                    <p class="reception-details">
+                        <u>RECEPTION</u> <br>
+                        TIAA Bank Touchdown Club<br>
+                        1 TIAA Bank Field Drive <br>
+                        Jacksonville, FL 32202 <br>
+                        2:00 PM <br>
+
+                        <a class="cta" href="RSVP.html"><button>RSVP</button></a>
+                    </p>
+                </div>
+
+
+                
+            </div>
+
+            <div class="right-column-details">
+                <img src="img/JagsGame.jpg" class="our-story__img" />
+            </div>
+        </section>
         
 
         <script src="js/index.js"></script>
