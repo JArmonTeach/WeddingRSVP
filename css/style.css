@@ -295,6 +295,36 @@ button:hover{
     margin-top: 1em;
 }
 
+.left-column-story, .left-column-details, .right-column-details{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decorative-box-story{
+    width: 32vw;
+    height: 30vw;
+    
+    background-color: var(--clr-accent-two);
+    position: absolute;
+    z-index: 1;
+}
+
+.decorative-box-event{
+    width: 33vw;
+    height: 35vw;
+    background-color: var(--clr-accent-one);
+    position: absolute;
+    z-index: 1;
+}
+
+.our-story__img, .event-details__img{
+    z-index: 2;
+    position: relative;
+    align-items: center;
+}
+
 
 
 /*RSVP PAGE*/
