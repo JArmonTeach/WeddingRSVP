@@ -258,7 +258,7 @@ button:hover{
     padding: 10px;
 }
 
-.our-story:after{
+.our-story:after, .event-details:after{
     content:"";
     display: table;
     clear: both;
@@ -267,6 +267,7 @@ button:hover{
 .our-story__header, .event-details__header{
     font-size: var(--fs-h2);
     font-weight: lighter;
+    text-align: center;
 }
 
 .event-details__subheading{
@@ -276,6 +277,7 @@ button:hover{
     margin-top: 1em;
     padding-right: 2em;
     text-align: center;
+    font-family: var(--ff-tercery);
 }
 
 .our-story__text{
@@ -295,7 +297,7 @@ button:hover{
     margin-top: 1em;
 }
 
-.left-column-story, .left-column-details, .right-column-details{
+.left-column-story, .right-column-details{
     position: relative;
     display: flex;
     justify-content: center;
@@ -305,7 +307,6 @@ button:hover{
 .decorative-box-story{
     width: 32vw;
     height: 30vw;
-    
     background-color: var(--clr-accent-two);
     position: absolute;
     z-index: 1;
@@ -323,9 +324,114 @@ button:hover{
     z-index: 2;
     position: relative;
     align-items: center;
+    justify-content: center;
 }
 
 
+
+/*Wedding Party*/
+
+.wedding-party{
+    position: relative;
+    padding: 1em;
+}
+
+.half-left-column, .half-right-column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.wedding-party:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.wedding-party__header{
+    font-size: var(--fs-h2);
+    font-weight: lighter;
+    text-align: center;
+}
+
+.wedding-party__subheading{
+    font-size: var(--fs-h2);
+    font-family: var(--ff-tercery);
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+}
+
+.Mish-bridesmaids__img, .Jan-groomsmen__img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .75em;
+    
+    border-radius: 25px;
+}
+
+.Mish-bridesmaids__img{
+    height: 700px;
+    object-fit: scale-down;
+
+    box-shadow: 
+        rgba(215, 162, 42, 0.4) 5px 5px, 
+        rgba(215, 162, 42, 0.3) 10px 10px, 
+        rgba(215, 162, 42, 0.2) 15px 15px, 
+        rgba(215, 162, 42, 0.1) 20px 20px, 
+        rgba(215, 162, 42, 0.05) 25px 25px;
+}
+
+.Jan-groomsmen__img{
+    height: 550px;
+    object-fit: scale-down;
+
+    box-shadow: 
+        rgba(0, 103, 120, 0.4) 5px 5px, 
+        rgba(0, 103, 120, 0.3) 10px 10px, 
+        rgba(0, 103, 120, 0.2) 15px 15px, 
+        rgba(0, 103, 120, 0.1) 20px 20px, 
+        rgba(0, 103, 120, 0.05) 25px 25px;
+}
+
+.bridesmaids-link, .groomsmen-link{
+    display: inline-block;
+    position: relative;
+    margin-top: 1.25em;
+}
+
+.bridesmaids-link:hover, .groomsmen-link:hover{
+    transform: scale(1.5);   
+    color: var(--clr-accent-two);
+    transition: all .2s ease-in-out;
+}
+
+.bridesmaids-link:hover, .groomsmen-link:hover{
+    transform: scale(1.5);   
+    color: var(--clr-accent-two);
+    transition: all .2s ease-in-out;
+}
+
+.bridesmaids-link:after, .groomsmen-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--clr-accent-one);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.bridesmaids-link:hover:after, .groomsmen-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
 /*RSVP PAGE*/
 
