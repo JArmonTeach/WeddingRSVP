@@ -245,9 +245,9 @@ button:hover{
 
 
 
-/*Our Story & Event Details*/
+/*Our Story, Event Details & Registry*/
 
-.our-story, .event-details{
+.our-story, .event-details, .registry{
     position: relative;
     padding: 1em;
 }
@@ -258,13 +258,13 @@ button:hover{
     padding: 10px;
 }
 
-.our-story:after, .event-details:after{
+.our-story:after, .event-details:after, .registry:after{
     content:"";
     display: table;
     clear: both;
 }
 
-.our-story__header, .event-details__header{
+.our-story__header, .event-details__header, .registry__header{
     font-size: var(--fs-h2);
     font-weight: lighter;
     text-align: center;
@@ -280,7 +280,7 @@ button:hover{
     font-family: var(--ff-tercery);
 }
 
-.our-story__text{
+.our-story__text, .registry-info{
     margin-top: 1em;
 }
 
@@ -325,6 +325,36 @@ button:hover{
     position: relative;
     align-items: center;
     justify-content: center;
+}
+
+.registry-info{
+    text-align: center;
+}
+
+.brands{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem;
+    list-style: none;
+    padding-top: 1em;
+}
+
+.brands__item{
+    background: var(--clr-light-background);
+}
+
+.brands__item img{
+    width: 130px;
+    height: 75px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.brands__item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 
@@ -432,6 +462,60 @@ button:hover{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+
+
+/* Footer */
+
+.footer{
+    position: relative;
+    padding: 1em;
+}
+
+.footer:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.address, .social-media-text{
+    text-align: center;
+}
+
+.attribute{
+    text-align: center;
+    margin-top: 7em;
+    font-style: italic;
+}
+
+.footer-monogram{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-media-logo{
+    width: 80px;
+    height: 25px;
+    object-fit: contain;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-column-details-footer{
+    flex-direction: column;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+
 
 /*RSVP PAGE*/
 
