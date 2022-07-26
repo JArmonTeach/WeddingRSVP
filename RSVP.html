@@ -21,62 +21,97 @@
 
     </head>
 
-    <body class="animated-background">
+    <body class="RSVP-page-body">
         <!--Home Navigation-->
-        <header>
+        <header class="RSVP-header">
             <a href="index.html">
-                <i class="fa-solid fa-house-chimney fa-2x right"></i>
+                <img src="img/JMmonogramWhite.svg" alt="Monogram of Initials" class="monogram-black-RSVP">
             </a>
+
+            <a class="cta" href="index.html"><button>Home</button></a>
         </header>
         
-        <form class="RSVP-form">
-            
-            <div class ="RSVP-info">
-                <img src="img/JMmonogramWhite.svg" alt="Monogram of Initials" class="monogram-black">
+        <div class="container">
+            <div class="title">RSVP</div>
+            <div class="subtitle">Please Respond by May 12, 2023</div>
 
-                <h1 class="RSVP-headding">RSVP</h1>
-                <h2 class="RSVP-info">Please Respond by May 12, 2023</h2>
+            <div class="content">
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name*</span>
+                            <input type="text" placeholder="Enter your first name" required>
+                        </div>
 
-                <label for="firstName">First Name *</label>
-                <input type="text" id="firstName"><br>
+                        <div class="input-box">
+                            <span class="details">Last Name*</span>
+                            <input type="text" placeholder="Enter your last name" required>
+                        </div>
 
-                <label for="lastName">Last Name *</label>
-                <input type="text" id="lastName"><br>
+                        <div class="input-box">
+                            <span class="details">Email*</span>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
 
-                <label for="email">Email *</label>
-                <input type="email" id="email"><br>
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input type="text" placeholder="Enter your number">
+                        </div>
+                    </div>
 
-                <!--TODO: only make one option able to click on-->
-                <h3 class="response-title">Will you be attending?</h3>
-                <input type="radio" id="responseYes">
-                <label for="responseYes">Graciously Accept</label><br>
-                
-                <input type="radio" id="responseNo">
-                <label for="responseNo">Respectfully Decline</label><br>
+                    <div class="attend-details">
+                        <input type="radio" name="attend" id="dot-A">
+                        <input type="radio" name="attend" id="dot-B">
 
-                <!--TODO: only make one option able to click on-->
-                <h3 class="response-title">Please choose a the meal of your choice</h3>
-                <input type="radio" id="beef">
-                <label for="beef"><i class="fa-solid fa-cow"></i></label><br>
-                
-                <input type="radio" id="fish">
-                <label for="fish"><i class="fa-solid fa-fish"></i></label><br>
+                        <span class="attend-title">Will you be attending?*</span>
 
-                <input type="radio" id="vegetarian">
-                <label for="vegetarian"><i class="fa-solid fa-carrot"></i></label><br>
+                        <div class="category">
+                            <label for="dot-A">
+                                <span class="dot A"></span>
+                                <span class="attend">Graciously Accept</span>
+                            </label>
 
-                <h3 class="party-title">Who in your immediate family or plus one will be attending with you?</h3>
-                <!--TODO: ADD dynamic form inputs for party-->
+                            <label for="dot-B">
+                                <span class="dot B"></span>
+                                <span class="attend">Respectfully Decline</span>
+                            </label>
+                        </div>
+                    </div>
 
-                <!--TODO: ADD mailing address area-->
+                    <div class="food-details">
+                        <input type="radio" name="food" id="dot-1">
+                        <input type="radio" name="food" id="dot-2">
+                        <input type="radio" name="food" id="dot-3">
+                        
+                        <span class="food-title">Meal choice*</span>
 
-                <!--TODO: ADD special request for allergies-->
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="food"><i class="fa-solid fa-cow"></i></span>
+                            </label>
 
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="food"><i class="fa-solid fa-fish"></i></span>
+                            </label>
+
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="food"><i class="fa-solid fa-carrot"></i></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--TODO: Who will be attending with you? (Note: please restrict this to a plus 1 and/or immediate family members-->
+
+                    <div class="button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
             </div>
-                
-
-        </form>
-
+        </div>
+        
         <script src="js/index.js"></script>
         
     </body>
