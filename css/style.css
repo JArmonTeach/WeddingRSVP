@@ -637,7 +637,7 @@ form .food-details .food-title{
 }
 
 .food-details{
-    visibility: hidden;
+    display: none;
 }
 
 form .attend-details .attend-title{
