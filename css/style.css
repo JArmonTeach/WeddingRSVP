@@ -636,11 +636,12 @@ form .food-details .food-title{
     font-size: var(--fs-body);
 }
 
-.food-details{
+.food-details, .additional-user-details{
     display: none;
 }
 
-form .attend-details .attend-title{
+form .attend-details .attend-title,
+form .additional-user-details .additional-attend-title{
     font-family: var(--ff-secondary);
     font-size: var(--fs-body);
 }

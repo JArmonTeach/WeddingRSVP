@@ -79,9 +79,9 @@
                     </div>
 
                     <div class="food-details" id="food-details">
-                        <input type="radio" name="food" id="dot-1">
-                        <input type="radio" name="food" id="dot-2">
-                        <input type="radio" name="food" id="dot-3">
+                        <input type="radio" name="food" id="dot-1" onclick="additionalGuestCheck()">
+                        <input type="radio" name="food" id="dot-2" onclick="additionalGuestCheck()">
+                        <input type="radio" name="food" id="dot-3" onclick="additionalGuestCheck()">
                         
                         <span class="food-title">Meal choice*</span>
 
@@ -106,6 +106,13 @@
                     <!--TODO: add extra guests info: first name and last name and food choice; once the food choice is chosen, then this section appears, it should be dynamic; try it with the example from the website first to see how it all looks-->
 
                     <!-- Will someone else be attending with you?* (Note: please restrict this to a plus 1 and/or immediate family members) -->
+
+                    <div class="additional-user-details" id="additional-user-details">
+                        <span class="additional-attend-title">Will someone else be attending with you?* (Note: please restrict this to a plus 1 and/or immediate family members)</span>
+                        
+                    </div>
+
+                    <!--TODO: clear button next to submit button-->
 
                     <div class="button">
                         <input type="submit" value="Submit">
