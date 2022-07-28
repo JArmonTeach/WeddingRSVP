@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>RSVP Forms</title>
+        <title>RSVP Form</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfroj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
@@ -103,13 +103,13 @@
                         </div>                        
                     </div>
 
-                    <!--TODO: add extra guests info: first name and last name and food choice; once the food choice is chosen, then this section appears, it should be dynamic; try it with the example from the website first to see how it all looks-->
-
-                    <!-- Will someone else be attending with you?* (Note: please restrict this to a plus 1 and/or immediate family members) -->
-
                     <div class="additional-user-details" id="additional-user-details">
-                        <span class="additional-attend-title">Will someone else be attending with you?* (Note: please restrict this to a plus 1 and/or immediate family members)</span>
+                        <span class="additional-attend-title">Who will be attending with you?* (Note: please restrict this to a plus 1 and/or immediate family members)</span>
                         
+                        <button id="addRow" type="button" class="btn btn-info" >Add Guest</button>
+
+                        <div id="new-row"></div>
+
                     </div>
 
                     <!--TODO: clear button next to submit button-->
