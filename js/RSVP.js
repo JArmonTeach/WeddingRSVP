@@ -1,8 +1,8 @@
 function attendanceCheck(){
     if(document.getElementById('dot-A').checked){
-        document.getElementByClass('food-details').style.visibility = 'visible';
+        document.getElementById('food-details').style.visibility = 'visible';
     }
     else{
-        document.getElementByClass('food-details').style.visibility = 'hidden';
+        document.getElementById('food-details').style.visibility = 'hidden';
     }
 }

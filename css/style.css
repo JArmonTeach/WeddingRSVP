@@ -636,6 +636,10 @@ form .food-details .food-title{
     font-size: var(--fs-body);
 }
 
+.food-details{
+    visibility: hidden;
+}
+
 form .attend-details .attend-title{
     font-family: var(--ff-secondary);
     font-size: var(--fs-body);
