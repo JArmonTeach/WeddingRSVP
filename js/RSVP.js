@@ -34,7 +34,7 @@ function addExtraGuest(){
 
     addFirstName();
     addLastName();
-    addMealOptions();
+    //addMealOptions();
 }
 
 //function to clone guest first name input text field
