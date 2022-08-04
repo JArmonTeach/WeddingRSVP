@@ -3,8 +3,13 @@ function attendanceCheck(){
     if(document.getElementById('dot-A').checked){
         document.getElementById('food-details').style.display = 'inherit';
     }
+    else if(document.getElementById('dot-B').checked){
+        document.getElementById('food-details').style.display = 'none';
+        document.getElementById('additional-user-details').style.display = 'none';
+    }
     else{
         document.getElementById('food-details').style.display = 'none';
+        document.getElementById('additional-user-details').style.display = 'none';
     }
 }
 
@@ -29,11 +34,11 @@ function addExtraGuest(){
 
     addFirstName();
     addLastName();
-    // addFoodChoices();
     
-    //TODO:do this for last name and clone the food choices too -- will most likely need to make the first name, last name and food different functions inside this function
+    //TODO: add food different functions inside this function
 }
 
+//funciton to clone guest first name input text field
 function addFirstName(){
     var original = document.getElementById("first-name-box");
     var clone = original.cloneNode(true);
@@ -41,15 +46,9 @@ function addFirstName(){
     document.getElementById("new-row").appendChild(clone);
 }
 
+//funciton to clone guest last name input text field
 function addLastName(){
     var original = document.getElementById("last-name-box");
-    var clone = original.cloneNode(true);
-    clone.removeAttribute("id");
-    document.getElementById("new-row").appendChild(clone);
-}
-
-function addFoodChoices(){
-    var original = document.getElementById("food-details");
     var clone = original.cloneNode(true);
     clone.removeAttribute("id");
     document.getElementById("new-row").appendChild(clone);
