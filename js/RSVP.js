@@ -34,11 +34,10 @@ function addExtraGuest(){
 
     addFirstName();
     addLastName();
-    
-    //TODO: add food different functions inside this function
+    addMealOptions();
 }
 
-//funciton to clone guest first name input text field
+//function to clone guest first name input text field
 function addFirstName(){
     var original = document.getElementById("first-name-box");
     var clone = original.cloneNode(true);
@@ -46,7 +45,7 @@ function addFirstName(){
     document.getElementById("new-row").appendChild(clone);
 }
 
-//funciton to clone guest last name input text field
+//function to clone guest last name input text field
 function addLastName(){
     var original = document.getElementById("last-name-box");
     var clone = original.cloneNode(true);
@@ -54,4 +53,13 @@ function addLastName(){
     document.getElementById("new-row").appendChild(clone);
 }
 
+//function to clone meal options field
+function addMealOptions(){
+    var original = document.getElementById("food-details");
+    var clone = original.cloneNode(true);
+
+    //TODO: Clone the radio buttons with incrementing id; will need to use find, and some type of attribute changer
+
+    document.getElementById("new-row").appendChild(clone);
+}
 //TODO: deleteExtraGuest()
