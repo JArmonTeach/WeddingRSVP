@@ -34,7 +34,7 @@ function addExtraGuest(){
 
     addFirstName();
     addLastName();
-    //addMealOptions();
+    addMealOptions();
 }
 
 //function to clone guest first name input text field
@@ -55,11 +55,13 @@ function addLastName(){
 
 //function to clone meal options field
 function addMealOptions(){
-    var original = document.getElementById("food-details");
-    var clone = original.cloneNode(true);
+    //create id variable that starts on 4
+    //create clone variable that gets the element by id of that div
 
-    //TODO: Clone the radio buttons with incrementing id; will need to use find, and some type of attribute changer
+    //finalClone = clone then find input, attribute and add id variable
+    //increment the id variable
+    //get the new-row and append the clone to it
 
-    document.getElementById("new-row").appendChild(clone);
+    //OR just figure it out with innerHTML dynamically adding html elements, but do it incrementally
 }
 //TODO: deleteExtraGuest()
