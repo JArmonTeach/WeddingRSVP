@@ -31,7 +31,6 @@ function additionalGuestCheck(){
 
 //adds input fields for additional guests for their first name, last name and meal option
 function addExtraGuest(){
-
     addFirstName();
     addLastName();
     addMealOptions();
@@ -55,13 +54,7 @@ function addLastName(){
 
 //function to clone meal options field
 function addMealOptions(){
-    //create id variable that starts on 4
-    //create clone variable that gets the element by id of that div
+    
 
-    //finalClone = clone then find input, attribute and add id variable
-    //increment the id variable
-    //get the new-row and append the clone to it
-
-    //OR just figure it out with innerHTML dynamically adding html elements, but do it incrementally
 }
 //TODO: deleteExtraGuest()
