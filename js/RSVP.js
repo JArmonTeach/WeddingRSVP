@@ -54,18 +54,12 @@ function addLastName(){
 
 //function to clone meal options field
 function addMealOptions(){
-    var divContainer = document.createElement('div');
-    divContainer.class = 'food-details';
-    divContainer.id = 'food-details';
-    
-    var spanLabel = document.createElement('span');
-    spanLabel.class= 'food-title';
-    spanLabel.textContent = "Meal choice*";
+    var original = document.getElementById("food-details");
+    var clone = original.cloneNode(true);
+    clone.setAttribute('id', 'cloned-food-details');
 
- 
-    var container = document.getElementById('new-row');
-    container.appendChild(divContainer);
-    container.appendChild(spanLabel);
-    //TODO: continue debugging this function
+    //TODO: change child ids
+
+    document.getElementById("new-row").appendChild(clone);
 }
 //TODO: deleteExtraGuest()
