@@ -42,6 +42,8 @@ function addFirstName(){
     var clone = original.cloneNode(true);
     clone.removeAttribute("id");
     document.getElementById("new-row").appendChild(clone);
+
+    //TODO: will have to figure out to change the IDs
 }
 
 //function to clone guest last name input text field
@@ -50,6 +52,8 @@ function addLastName(){
     var clone = original.cloneNode(true);
     clone.removeAttribute("id");
     document.getElementById("new-row").appendChild(clone);
+
+    //TODO: will have to figure out to change the IDs
 }
 
 //function to clone meal options field
