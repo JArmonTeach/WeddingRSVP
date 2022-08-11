@@ -28,3 +28,5 @@ function additionalGuestCheck(){
         document.getElementById('additional-user-details').style.display = 'none';
     }
 }
+
+//TODO: try adding the new duplicate elements raw without styling and see if it actually works using the createElement, setting their attributes and appending the children
