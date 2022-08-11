@@ -79,9 +79,9 @@
                     </div>
 
                     <div class="food-details" id="food-details">
-                        <input type="radio" name="food" id="dot-1" >
-                        <input type="radio" name="food" id="dot-2" >
-                        <input type="radio" name="food" id="dot-3" >
+                        <input type="radio" name="food" id="dot-1" onclick="additionalGuestCheck()">
+                        <input type="radio" name="food" id="dot-2" onclick="additionalGuestCheck()">
+                        <input type="radio" name="food" id="dot-3" onclick="additionalGuestCheck()">
                         
                         <span class="food-title">Meal choice*</span>
 
@@ -103,12 +103,12 @@
                         </div>                        
                     </div>
 
-                    <div>  
-                        <div class="additional-user-details" id="additional-user-details">
-                            <span class="additional-attend-title">Who will be attending with you?* (Note: please restrict this to a plus 1 and/or immediate family members)</span>
+                    <div class="additional-user-details" id="additional-user-details">
+                        <span class="additional-attend-title">Who will be attending with you?* (Note: please restrict this to a plus 1 and/or immediate family members)</span>
+
+                        <button id="addRow" type="button" class="btn btn-info" >Add Guest</button>
 
                         <div id="new-row" class="user-details"></div>
-
                     </div>
 
                     <div class="button">
