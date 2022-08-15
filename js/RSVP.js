@@ -6,6 +6,7 @@ function attendanceCheck(){
     else if(document.getElementById('dot-B').checked){
         document.getElementById('food-details').style.display = 'none';
         document.getElementById('additional-user-details').style.display = 'none';
+        //TODO: add that the dots values are then unchecked
     }
     else{
         document.getElementById('food-details').style.display = 'none';
@@ -30,7 +31,10 @@ function additionalGuestCheck(){
 }
 
 //adds extra guest input fields for first name, last name and meal choices
-function addGuest(){    
+function addGuest(){
+
+    //TODO: add a guest counter that displays
+    
     //extra First Name
     let firstNameTitle = document.createElement("span");
     firstNameTitle.setAttribute("class", "details");
