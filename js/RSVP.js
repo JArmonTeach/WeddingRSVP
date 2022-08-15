@@ -60,6 +60,7 @@ function addGuest(){
 
 
     //extra Food choices
+    //TODO: gotta fix the Styling
     let foodChoicesTitle = document.createElement("span");
     foodChoicesTitle.setAttribute("class", "food-title");
     foodChoicesTitle.textContent = "Meal choice*";
