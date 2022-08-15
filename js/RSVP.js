@@ -29,4 +29,55 @@ function additionalGuestCheck(){
     }
 }
 
-//TODO: try adding the new duplicate elements raw without styling and see if it actually works using the createElement, setting their attributes and appending the children
+//adds extra guest input fields for first name, last name and meal choices
+function addGuest(){    
+    //extra First Name
+    let firstNameTitle = document.createElement("span");
+    firstNameTitle.setAttribute("class", "details");
+    firstNameTitle.textContent = "First Name*";
+    
+    let firstName = document.createElement("input");
+    firstName.setAttribute("type", "text");
+    firstName.setAttribute("placeholder", "Enter your first name");
+
+    document.getElementById('extra-first-name-box').appendChild(firstNameTitle);
+    document.getElementById('extra-first-name-box').appendChild(firstName);
+
+
+
+    //extra Last Name
+    let lastNameTitle = document.createElement("span");
+    lastNameTitle.setAttribute("class", "details");
+    lastNameTitle.textContent = "Last Name*";
+    
+    let lastName = document.createElement("input");
+    lastName.setAttribute("type", "text");
+    lastName.setAttribute("placeholder", "Enter your last name");
+
+    document.getElementById('extra-last-name-box').appendChild(lastNameTitle);
+    document.getElementById('extra-last-name-box').appendChild(lastName);
+
+
+
+    //extra Food choices
+    let foodChoicesTitle = document.createElement("span");
+    foodChoicesTitle.setAttribute("class", "food-title");
+    foodChoicesTitle.textContent = "Meal choice*";
+
+    document.getElementById('extra-food-details').appendChild(foodChoicesTitle);
+
+    let mealChoice = ['Steak', 'Fish', 'Vegetarian'];
+    mealChoice.forEach((mealValue, i) => {
+      let labelValue = document.createElement('label');
+      labelValue.innerHTML = mealValue;
+
+      let inputValue = document.createElement('input');
+      inputValue.type = "radio";
+      inputValue.name = mealValue;
+      inputValue.style.display = 'initial';
+      inputValue.mealValue = i;
+
+      document.getElementById('extra-food-details').appendChild(labelValue);
+      document.getElementById('extra-food-details').appendChild(inputValue);
+    });
+}
