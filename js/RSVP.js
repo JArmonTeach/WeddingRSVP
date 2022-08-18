@@ -6,7 +6,14 @@ function attendanceCheck(){
     else if(document.getElementById('dot-B').checked){
         document.getElementById('food-details').style.display = 'none';
         document.getElementById('additional-user-details').style.display = 'none';
-        //TODO: add that the dots values are then unchecked
+        
+        let mealOption1 = document.getElementById('dot-1');
+        let mealOption2 = document.getElementById('dot-2');
+        let mealOption3 = document.getElementById('dot-3');
+
+        mealOption1.checked = false;
+        mealOption2.checked = false;
+        mealOption3.checked = false;
     }
     else{
         document.getElementById('food-details').style.display = 'none';
