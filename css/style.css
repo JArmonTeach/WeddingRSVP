@@ -601,7 +601,8 @@ button:hover{
   font-size: var(--fs-body);
 }
 
-form .user-details .input-box{
+form .user-details .input-box,
+form .additional-user-details .input-box{
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
 }
@@ -613,7 +614,8 @@ form .input-box span.details{
   font-size: var(--fs-body);
 }
 
-.user-details .input-box input{
+.user-details .input-box input,
+.additional-user-details .input-box input{
   height: 45px;
   width: 100%;
   outline: none;
@@ -627,7 +629,9 @@ form .input-box span.details{
 }
 
 .user-details .input-box input:focus,
-.user-details .input-box input:valid{
+.user-details .input-box input:valid,
+.additional-user-details .input-box input:focus,
+.additional-user-details .input-box input:valid{
   border-color: var(--clr-accent-two);
 }
 

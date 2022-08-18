@@ -1,3 +1,10 @@
+//global variables 
+let mealOption1 = document.getElementById('dot-1');
+let mealOption2 = document.getElementById('dot-2');
+let mealOption3 = document.getElementById('dot-3');
+
+let guestCounter = 1;
+
 //checks if guest is attending, if so, then it shows the meal options
 function attendanceCheck(){
     if(document.getElementById('dot-A').checked){
@@ -6,10 +13,6 @@ function attendanceCheck(){
     else if(document.getElementById('dot-B').checked){
         document.getElementById('food-details').style.display = 'none';
         document.getElementById('additional-user-details').style.display = 'none';
-        
-        let mealOption1 = document.getElementById('dot-1');
-        let mealOption2 = document.getElementById('dot-2');
-        let mealOption3 = document.getElementById('dot-3');
 
         mealOption1.checked = false;
         mealOption2.checked = false;
@@ -23,13 +26,13 @@ function attendanceCheck(){
 
 //checks if a meal option has been chosen, then shows the additional guest prompt
 function additionalGuestCheck(){
-    if(document.getElementById('dot-1').checked){
+    if(mealOption1.checked){
         document.getElementById('additional-user-details').style.display = 'inherit';
     }
-    else if(document.getElementById('dot-2').checked){
+    else if(mealOption2.checked){
         document.getElementById('additional-user-details').style.display = 'inherit';
     }
-    else if(document.getElementById('dot-3').checked){
+    else if(mealOption3.checked){
         document.getElementById('additional-user-details').style.display = 'inherit';
     }
     else{
@@ -40,16 +43,14 @@ function additionalGuestCheck(){
 //adds extra guest input fields for first name, last name and meal choices
 function addGuest(){
 
-    //TODO: add a guest counter that displays
-    
     //extra First Name
     let firstNameTitle = document.createElement("span");
     firstNameTitle.setAttribute("class", "details");
-    firstNameTitle.textContent = "First Name*";
+    firstNameTitle.textContent = "Additional Guest " + guestCounter;
     
     let firstName = document.createElement("input");
     firstName.setAttribute("type", "text");
-    firstName.setAttribute("placeholder", "Enter your first name");
+    firstName.setAttribute("placeholder", "Enter first name");
 
     document.getElementById('extra-first-name-box').appendChild(firstNameTitle);
     document.getElementById('extra-first-name-box').appendChild(firstName);
@@ -59,11 +60,11 @@ function addGuest(){
     //extra Last Name
     let lastNameTitle = document.createElement("span");
     lastNameTitle.setAttribute("class", "details");
-    lastNameTitle.textContent = "Last Name*";
+    lastNameTitle.textContent = "Additional Guest " + guestCounter;
     
     let lastName = document.createElement("input");
     lastName.setAttribute("type", "text");
-    lastName.setAttribute("placeholder", "Enter your last name");
+    lastName.setAttribute("placeholder", "Enter last name");
 
     document.getElementById('extra-last-name-box').appendChild(lastNameTitle);
     document.getElementById('extra-last-name-box').appendChild(lastName);
@@ -74,7 +75,7 @@ function addGuest(){
     //TODO: gotta fix the Styling
     let foodChoicesTitle = document.createElement("span");
     foodChoicesTitle.setAttribute("class", "food-title");
-    foodChoicesTitle.textContent = "Meal choice*";
+    foodChoicesTitle.textContent = "Additional Guest " + guestCounter + " Meal choice*";
 
     document.getElementById('extra-food-details').appendChild(foodChoicesTitle);
 
@@ -92,4 +93,6 @@ function addGuest(){
       document.getElementById('extra-food-details').appendChild(labelValue);
       document.getElementById('extra-food-details').appendChild(inputValue);
     });
+
+    guestCounter++;
 }
