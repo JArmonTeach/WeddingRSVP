@@ -655,20 +655,24 @@ form .attend-details .attend{
     font-size: 15px;
 }
 
-form .category{
+form .category,
+form .extra-food-details{
    display: flex;
+   flex-wrap: wrap;
    width: 80%;
    margin: 14px 0 ;
    justify-content: space-between;
 }
 
-form .category label{
+form .category label,
+form .extra-food-details label{
    display: flex;
    align-items: center;
    cursor: pointer;
 }
 
-form .category label .dot{
+form .category label .dot,
+form .extra-food-details label .dot{
   height: 18px;
   width: 18px;
   border-radius: 50%;
@@ -678,9 +682,9 @@ form .category label .dot{
   transition: all 0.3s ease;
 }
 
+#dot-0:checked ~ .category label .zero,
 #dot-1:checked ~ .category label .one,
-#dot-2:checked ~ .category label .two,
-#dot-3:checked ~ .category label .three{
+#dot-2:checked ~ .category label .two{
    background: var(--clr-accent-two);
    border-color: var(--clr-light-font);
 }

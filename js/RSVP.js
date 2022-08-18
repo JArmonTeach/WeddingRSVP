@@ -1,7 +1,7 @@
 //global variables 
-let mealOption1 = document.getElementById('dot-1');
-let mealOption2 = document.getElementById('dot-2');
-let mealOption3 = document.getElementById('dot-3');
+let mealOption1 = document.getElementById('dot-0');
+let mealOption2 = document.getElementById('dot-1');
+let mealOption3 = document.getElementById('dot-2');
 
 let guestCounter = 1;
 
@@ -40,6 +40,7 @@ function additionalGuestCheck(){
     }
 }
 
+//TODO:Change wording of additional guests fields
 //adds extra guest input fields for first name, last name and meal choices
 function addGuest(){
 
@@ -72,23 +73,26 @@ function addGuest(){
 
 
     //extra Food choices
-    //TODO: gotta fix the Styling
     let foodChoicesTitle = document.createElement("span");
     foodChoicesTitle.setAttribute("class", "food-title");
     foodChoicesTitle.textContent = "Additional Guest " + guestCounter + " Meal choice*";
 
     document.getElementById('extra-food-details').appendChild(foodChoicesTitle);
 
-    let mealChoice = ['Steak', 'Fish', 'Vegetarian'];
+    var mealChoice = ['Steak', 'Fish', 'Vegetarian'];
     mealChoice.forEach((mealValue, i) => {
-      let labelValue = document.createElement('label');
+      var labelValue = document.createElement('label');
       labelValue.innerHTML = mealValue;
+      labelValue.for = "dot-" + i;
+      labelValue.style.fontFamily = "Cormorant, serif";
+      //labelValue.style.fontSize = "1rem";
 
-      let inputValue = document.createElement('input');
+      var inputValue = document.createElement('input');
       inputValue.type = "radio";
-      inputValue.name = mealValue;
+      inputValue.name = "food" + guestCounter;
+      inputValue.id = "dot-" + i;
       inputValue.style.display = 'initial';
-      inputValue.mealValue = i;
+      inputValue.value = mealValue;
 
       document.getElementById('extra-food-details').appendChild(labelValue);
       document.getElementById('extra-food-details').appendChild(inputValue);
@@ -96,3 +100,5 @@ function addGuest(){
 
     guestCounter++;
 }
+
+//TODO: will need to create a remove extra guest function

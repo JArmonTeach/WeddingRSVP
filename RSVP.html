@@ -79,25 +79,25 @@
                     </div>
 
                     <div class="food-details" id="food-details">
-                        <input type="radio" name="food" id="dot-1" onclick="additionalGuestCheck()">
-                        <input type="radio" name="food" id="dot-2" onclick="additionalGuestCheck()">
-                        <input type="radio" name="food" id="dot-3" onclick="additionalGuestCheck()">
+                        <input type="radio" name="food" id="dot-0" value="steak" onclick="additionalGuestCheck()">
+                        <input type="radio" name="food" id="dot-1" value="fish" onclick="additionalGuestCheck()">
+                        <input type="radio" name="food" id="dot-2" value="vegetarian" onclick="additionalGuestCheck()">
                         
                         <span class="food-title">Meal choice*</span>
 
                         <div class="category">
+                            <label for="dot-0">
+                                <span class="dot zero"></span>
+                                <span class="food"><i class="fa-solid fa-cow"></i> (Steak)</span>
+                            </label>
+
                             <label for="dot-1">
                                 <span class="dot one"></span>
-                                <span class="food"><i class="fa-solid fa-cow"></i> (Steak)</span>
+                                <span class="food"><i class="fa-solid fa-fish"></i> (Fish)</span>
                             </label>
 
                             <label for="dot-2">
                                 <span class="dot two"></span>
-                                <span class="food"><i class="fa-solid fa-fish"></i> (Fish)</span>
-                            </label>
-
-                            <label for="dot-3">
-                                <span class="dot three"></span>
                                 <span class="food"><i class="fa-solid fa-carrot"></i> (Vegetarian)</span>
                             </label>
                         </div>                        
@@ -108,6 +108,8 @@
 
                         <button id="addRow" type="button" class="btn btn-info" onclick="addGuest()">Add Guest</button>
 
+                        <!--TODO:will need to create remove extra guest button-->
+
                         <div id="new-row" class="user-details">
                             <div class="input-box" id="extra-first-name-box">
                                 
@@ -117,7 +119,7 @@
                                 
                             </div>
 
-                            <div id="extra-food-details">
+                            <div id="extra-food-details" class="extra-food-details">
                                 
                             </div>
 
