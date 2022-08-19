@@ -5,6 +5,8 @@ let mealOption3 = document.getElementById('dot-2');
 
 let guestCounter = 1;
 
+
+
 //checks if guest is attending, if so, then it shows the meal options
 function attendanceCheck(){
     if(document.getElementById('dot-A').checked){
@@ -24,6 +26,8 @@ function attendanceCheck(){
     }
 }
 
+
+
 //checks if a meal option has been chosen, then shows the additional guest prompt
 function additionalGuestCheck(){
     if(mealOption1.checked){
@@ -40,14 +44,14 @@ function additionalGuestCheck(){
     }
 }
 
-//TODO:Change wording of additional guests fields
+
+
 //adds extra guest input fields for first name, last name and meal choices
 function addGuest(){
-
     //extra First Name
     let firstNameTitle = document.createElement("span");
     firstNameTitle.setAttribute("class", "details");
-    firstNameTitle.textContent = "Additional Guest " + guestCounter;
+    firstNameTitle.textContent = "Extra Guest " + guestCounter + " First Name*";
     
     let firstName = document.createElement("input");
     firstName.setAttribute("type", "text");
@@ -61,7 +65,7 @@ function addGuest(){
     //extra Last Name
     let lastNameTitle = document.createElement("span");
     lastNameTitle.setAttribute("class", "details");
-    lastNameTitle.textContent = "Additional Guest " + guestCounter;
+    lastNameTitle.textContent = "Extra Guest " + guestCounter + " Last Name*";
     
     let lastName = document.createElement("input");
     lastName.setAttribute("type", "text");
@@ -101,4 +105,9 @@ function addGuest(){
     guestCounter++;
 }
 
-//TODO: will need to create a remove extra guest function
+
+
+//removes the last added extra guest input fields for first name, last name and meal choices
+function removeGuest(){
+    
+}
