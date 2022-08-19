@@ -1,9 +1,14 @@
 //global variables 
-let mealOption1 = document.getElementById('dot-0');
-let mealOption2 = document.getElementById('dot-1');
-let mealOption3 = document.getElementById('dot-2');
+var mealOption1 = document.getElementById('dot-0');
+var mealOption2 = document.getElementById('dot-1');
+var mealOption3 = document.getElementById('dot-2');
 
-let guestCounter = 1;
+var extraFirstNameList = document.getElementById('extra-first-name-box');
+var extraLastNameList = document.getElementById('extra-last-name-box');
+var extraMealChoicesList = document.getElementById('extra-food-details');
+
+var mealChoice = ['Steak', 'Fish', 'Vegetarian'];
+var guestCounter = 1;
 
 
 
@@ -19,10 +24,15 @@ function attendanceCheck(){
         mealOption1.checked = false;
         mealOption2.checked = false;
         mealOption3.checked = false;
+
+        while(guestCounter >= 0){
+            removeGuest();
+            //a decrement is not present here because there is one in the function removeGuest()
+        }
     }
     else{
         document.getElementById('food-details').style.display = 'none';
-        document.getElementById('additional-user-details').style.display = 'none';
+        document.getElementById('additional-user-details').style.display = 'none';        
     }
 }
 
@@ -83,15 +93,14 @@ function addGuest(){
 
     document.getElementById('extra-food-details').appendChild(foodChoicesTitle);
 
-    var mealChoice = ['Steak', 'Fish', 'Vegetarian'];
     mealChoice.forEach((mealValue, i) => {
-      var labelValue = document.createElement('label');
+      let labelValue = document.createElement('label');
       labelValue.innerHTML = mealValue;
       labelValue.for = "dot-" + i;
       labelValue.style.fontFamily = "Cormorant, serif";
       //labelValue.style.fontSize = "1rem";
 
-      var inputValue = document.createElement('input');
+      let inputValue = document.createElement('input');
       inputValue.type = "radio";
       inputValue.name = "food" + guestCounter;
       inputValue.id = "dot-" + i;
@@ -109,5 +118,14 @@ function addGuest(){
 
 //removes the last added extra guest input fields for first name, last name and meal choices
 function removeGuest(){
-    
+    for(let i = 0; i < 2; i++){
+        extraFirstNameList.removeChild(extraFirstNameList.lastChild);
+        extraLastNameList.removeChild(extraLastNameList.lastChild);
+    }
+
+    for(let j = 0; j < 7; j++){
+        extraMealChoicesList.removeChild(extraMealChoicesList.lastChild);
+    }
+
+    guestCounter--;
 }
