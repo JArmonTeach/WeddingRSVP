@@ -1,18 +1,25 @@
-//global variables 
+/**
+ * Global Variables
+ */
+//variables for meal option radio buttons
 var mealOption1 = document.getElementById('dot-0');
 var mealOption2 = document.getElementById('dot-1');
 var mealOption3 = document.getElementById('dot-2');
 
+//variables to get HTML element where extra guest dynamic form elements will be inserted
 var extraFirstNameList = document.getElementById('extra-first-name-box');
 var extraLastNameList = document.getElementById('extra-last-name-box');
 var extraMealChoicesList = document.getElementById('extra-food-details');
 
-var mealChoice = ['Steak', 'Fish', 'Vegetarian'];
+var mealChoice = ['Steak', 'Fish', 'Vegetarian']; //array of all possible meal choices
 var guestCounter = 1;
 
 
 
 //checks if guest is attending, if so, then it shows the meal options
+/**
+ * 
+ */
 function attendanceCheck(){
     if(document.getElementById('dot-A').checked){
         document.getElementById('food-details').style.display = 'inherit';
