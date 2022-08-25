@@ -780,9 +780,9 @@ form .category{
 
 
 
-/*Groomsmen page*/
+/*Groomsmen and Bridesmaids page*/
 
-/*Groomsmen header*/
+/*Party header*/
 .wedding-party-subpage{
     position: relative;
     padding: 7em;
@@ -807,7 +807,7 @@ form .category{
 .wedding-party-person-name:before{
     content: "";
     position: absolute;
-    left: 17%;
+    left: 15%;
     bottom: 10px;
     width: 70px;
     height: 10px;
@@ -833,7 +833,7 @@ form .category{
 .person-card{
     background: var(--clr-light-background);
     color: var(--clr-dark-one);
-    width: 220px;
+    width: 300px;
     margin: 10px;
     border-radius: 15px;
 }
@@ -851,12 +851,13 @@ form .category{
 }
 
 .card-image{
-    height: 170px;
+    height: 250px;
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 15px 15px 0px 0px;
 }
 
+/*Groomsmen Pictures*/
 .groomsman-1{
     background-image: url('../img/Groomsmen/antMan.jpg');
 }
@@ -895,4 +896,61 @@ form .category{
 
 .groomsman-10{
     background-image: url('../img/Groomsmen/wong.jpg');
+}
+
+/*Bridesmaids Pictures*/
+.bridesmaid-1{
+    background-image: url('../img/Bridesmaids/anna.jpg');
+}
+
+.bridesmaid-2{
+    background-image: url('../img/Bridesmaids/ariel.jpg');
+}
+
+.bridesmaid-3{
+    background-image: url('../img/Bridesmaids/aurora.jpg');
+}
+
+.bridesmaid-4{
+    background-image: url('../img/Bridesmaids/belle.jpg');
+}
+
+.bridesmaid-5{
+    background-image: url('../img/Bridesmaids/cinderella.jpg');
+}
+
+.bridesmaid-6{
+    background-image: url('../img/Bridesmaids/elsa.jpg');
+}
+
+.bridesmaid-7{
+    background-image: url('../img/Bridesmaids/jasmine.jpg');
+}
+
+.bridesmaid-8{
+    background-image: url('../img/Bridesmaids/merida.jpg');
+}
+
+.bridesmaid-9{
+    background-image: url('../img/Bridesmaids/moana.jpg');
+}
+
+.bridesmaid-10{
+    background-image: url('../img/Bridesmaids/mulan.jpg');
+}
+
+.bridesmaid-11{
+    background-image: url('../img/Bridesmaids/pocahontas.jpg');
+}
+
+.bridesmaid-12{
+    background-image: url('../img/Bridesmaids/rapunzel.jpg');
+}
+
+.bridesmaid-13{
+    background-image: url('../img/Bridesmaids/snowWhite.jpg');
+}
+
+.bridesmaid-14{
+    background-image: url('../img/Bridesmaids/tiana.jpg');
 }
