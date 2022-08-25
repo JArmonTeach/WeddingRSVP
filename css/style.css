@@ -395,6 +395,11 @@ button:hover{
     padding: 1em;
 }
 
+.wedding-party-subpage{
+    position: relative;
+    padding: 7em;
+}
+
 .half-left-column, .half-right-column{
     float: left;
     width: 50%;
@@ -777,3 +782,16 @@ form .category{
         flex-direction: column;
     }
 }
+
+
+
+/*Groomsmen page*/
+
+/*Groomsmen header*/
+.groomsmen-header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0px;
+}
+
