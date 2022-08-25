@@ -211,7 +211,7 @@ button:hover{
 
 /*Main Announcement*/
 .initial-bg{
-    background-image: url('../img/ProposalKnee.jpg');
+    background-image: url('../img/JanAndMeahway/ProposalKnee.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -393,11 +393,6 @@ button:hover{
 .wedding-party{
     position: relative;
     padding: 1em;
-}
-
-.wedding-party-subpage{
-    position: relative;
-    padding: 7em;
 }
 
 .half-left-column, .half-right-column{
@@ -788,6 +783,11 @@ form .category{
 /*Groomsmen page*/
 
 /*Groomsmen header*/
+.wedding-party-subpage{
+    position: relative;
+    padding: 7em;
+}
+
 .groomsmen-header{
     position: absolute;
     width: 100%;
@@ -795,3 +795,104 @@ form .category{
     right: 0px;
 }
 
+.wedding-party-person-name{
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h4);
+    font-weight: lighter;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.wedding-party-person-name:before{
+    content: "";
+    position: absolute;
+    left: 17%;
+    bottom: 10px;
+    width: 70px;
+    height: 10px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(0, 103, 120, 0.5);
+    z-index: -1;
+}
+
+.wedding-party-person-description{
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    font-weight: 600;
+    padding: 10px;
+}
+
+.wedding-party-container{
+    margin: 2em 1em 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.person-card{
+    background: var(--clr-light-background);
+    color: var(--clr-dark-one);
+    width: 220px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.person-card:hover{
+    background-color: var(--clr-dark-two);
+    color: var(--clr-light-font);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all .5s ease;
+}
+
+.person-card:hover .wedding-party-person-name:before{
+    background: rgba(215, 162, 42, 0.5);
+}
+
+.card-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.groomsman-1{
+    background-image: url('../img/Groomsmen/antMan.jpg');
+}
+
+.groomsman-2{
+    background-image: url('../img/Groomsmen/blackPanther.jpg');
+}
+
+.groomsman-3{
+    background-image: url('../img/Groomsmen/captainAmerica.jpg');
+}
+
+.groomsman-4{
+    background-image: url('../img/Groomsmen/drStrange.jpg');
+}
+
+.groomsman-5{
+    background-image: url('../img/Groomsmen/hawkeye.jpg');
+}
+
+.groomsman-6{
+    background-image: url('../img/Groomsmen/hulk.jpg');
+}
+
+.groomsman-7{
+    background-image: url('../img/Groomsmen/nickFurry.jpg');
+}
+
+.groomsman-8{
+    background-image: url('../img/Groomsmen/spiderman.jpg');
+}
+
+.groomsman-9{
+    background-image: url('../img/Groomsmen/thor.jpg');
+}
+
+.groomsman-10{
+    background-image: url('../img/Groomsmen/wong.jpg');
+}
