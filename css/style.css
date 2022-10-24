@@ -944,33 +944,7 @@ form .category{
     background-image: url('../img/Groomsmen/nickFurry.jpg');
 }
 
-.groomsman-8{
-    background-image: url('../img/Groomsmen/spiderman.jpg');
-}
 
-.groomsman-9{
-    background-image: url('../img/Groomsmen/thor.jpg');
-}
-
-.groomsman-10{
-    background-image: url('../img/Groomsmen/wong.jpg');
-}
-
-.groomsman-11{
-    background-image: url('../img/Groomsmen/jimmyWoo.jpg');
-}
-
-.groomsman-12{
-    background-image: url('../img/Groomsmen/ned.jpg');
-}
-
-.groomsman-13{
-    background-image: url('../img/Groomsmen/shangChi.jpg');
-}
-
-.groomsman-14{
-    background-image: url('../img/Groomsmen/gilgamesh.jpg');
-}
 
 /*Bridesmaids Pictures*/
 .bridesmaid-1{
@@ -999,32 +973,4 @@ form .category{
 
 .bridesmaid-7{
     background-image: url('../img/Bridesmaids/jasmine.jpg');
-}
-
-.bridesmaid-8{
-    background-image: url('../img/Bridesmaids/merida.jpg');
-}
-
-.bridesmaid-9{
-    background-image: url('../img/Bridesmaids/moana.jpg');
-}
-
-.bridesmaid-10{
-    background-image: url('../img/Bridesmaids/mulan.jpg');
-}
-
-.bridesmaid-11{
-    background-image: url('../img/Bridesmaids/pocahontas.jpg');
-}
-
-.bridesmaid-12{
-    background-image: url('../img/Bridesmaids/rapunzel.jpg');
-}
-
-.bridesmaid-13{
-    background-image: url('../img/Bridesmaids/snowWhite.jpg');
-}
-
-.bridesmaid-14{
-    background-image: url('../img/Bridesmaids/tiana.jpg');
 }
