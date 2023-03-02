@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-## Instalation
+## Installation
 
 ## Usage
 
