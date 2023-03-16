@@ -17,6 +17,18 @@ If using Visual Studio Code, you can install the "open in browser" extension to 
 Just right click on the html file and click "Open in Default browser" or "Open in Other Browsers" to view the website.
 
 ## Usage
+    1. On the landing page, the main announcement can be seen along with navigation.
+    2. The user may click on the links to go to the "Our Story" section, "Event Details" section, "Wedding Party" section, "Registry" section or "RSVP" form page or scroll down to see the sections.
+
+    3a. Once at the "Event Details" section, one can click the "RSVP" button to go to the RSVP form.
+    3b. The user can fill out the form with their respective information and click the "Submit" button.
+    3c. On this page, the user can click on the "Home" button or the "JM" monogram logo to go back to the homepage. 
+
+    4a. Once at the "Meet the" Bridesmaids or Groomsmen section, the user can click on the words "BRIDESMAIDS" or "GROOMSMEN" to either go to the Bridesmaids page or the Groomsmen page, respectively.
+    4b. Once on the Bridesmaids and Groomsmen pages, the user can view the wedding party members.
+    4c. On both of those pages, the user can click on the "Home" button or the "JM" monogram logo to go back to the homepage. 
+
+    4a. Once at the "Registry" section, one can click on any of the store logo buttons to navigate to those respective sites with the gift registry information.
 
 ## Credits
 
