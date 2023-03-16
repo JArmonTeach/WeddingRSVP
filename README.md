@@ -31,5 +31,6 @@ Just right click on the html file and click "Open in Default browser" or "Open i
     4a. Once at the "Registry" section, one can click on any of the store logo buttons to navigate to those respective sites with the gift registry information.
 
 ## Credits
+Tutorial that had base code to explain the HTML, CSS and JS: https://www.youtube.com/watch?v=_xkSvufmjEs&t=5778s
 
 ## License 
