@@ -5,7 +5,7 @@ This frontend program acts as a wedding styled website. It covers the wedding's 
 
 This frontend UI website was used to learn HTML5, CSS3 and JavaScript's syntax and semantics through the operations of a wedding website.
 
-A challege that came about was creating a dynamic RSVP form. The solution of having JavaScript method to detect if certain input fields were filled or checked will be helpful for futre uses of dynamic forms.
+A challege that came about was creating a dynamic RSVP form. The solution of having JavaScript method to detect if certain input fields were filled or checked will be helpful for future uses of dynamic forms.
 
 ## Installation
     If git is installed you can clone the code to your machine, or download a ZIP of all the filed directly. 
@@ -28,7 +28,7 @@ A challege that came about was creating a dynamic RSVP form. The solution of hav
     4b. Once on the Bridesmaids and Groomsmen pages, the user can view the wedding party members.
     4c. On both of those pages, the user can click on the "Home" button or the "JM" monogram logo to go back to the homepage. 
 
-    4a. Once at the "Registry" section, one can click on any of the store logo buttons to navigate to those respective sites with the gift registry information.
+    5a. Once at the "Registry" section, one can click on any of the store logo buttons to navigate to those respective sites with the gift registry information.
 
 ## Credits
 Tutorial that had base code to explain the HTML, CSS and JS: https://www.youtube.com/watch?v=_xkSvufmjEs&t=5778s
